@@ -5,7 +5,7 @@ const HeroSection = () => {
   const styles = {
     heroSectionWrapper: {
       position: "relative",
-      minHeight: "100vh",
+      minHeight: "60vh",
       display: "flex",
       alignItems: "center",
       justifyContent: "left",
@@ -26,27 +26,32 @@ const HeroSection = () => {
 
   return (
     <div style={styles.heroSectionWrapper}>
-      <Stack sx={{ color: "white" }} maxWidth="sm">
+      <Stack
+        sx={{ color: "white" }}
+        maxWidth="md"
+        ml={{ xs: "1rem", lg: "5rem" }}
+      >
         <Typography
-          sx={{ marginLeft: "1rem" }}
+          sx={{ fontFamily: "serif", fontWeight: "bold" }}
           variant="h4"
           component="h1"
           style={styles.heading}
         >
-          Your Heading Here
+          Asset And Fund Intelligence for the commercial Real Estate Industry
         </Typography>
-        <Typography sx={{ marginLeft: "1rem" }} variant="body1" component="p">
+        <Typography sx={{}} variant="body1" component="p">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
-          rerum dolores vitae totam quos possimus obcaecati eligendi magni nihil
-          perspiciatis enim quo, fuga ipsam qui quibusdam nobis ipsa! Qui, hic!
+          rerum dolores vitae.
         </Typography>
         <div style={styles.buttonWrapper}>
           <Button
-            sx={{ marginLeft: "1rem" }}
+            sx={{
+              borderRadius: "1rem",
+              background: "blue",
+            }}
             variant="contained"
-            color="primary"
           >
-            Your Button
+            Contact sales
           </Button>
         </div>
       </Stack>
